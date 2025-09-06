@@ -5,7 +5,14 @@
 #include <string>
 
 void Game::run() {
-  std::cout << "name: " << PlayerName << "\ndiffculty: " << difficulty;
+  std::string diff;
+  if (difficulty == Diffculty::normal) {
+    diff = "normal";
+  } else {
+    diff = "difficult";
+  }
+
+  std::cout << "name: " << PlayerName << "\ndiffculty: " << diff;
 }
 
 Game::Game(std::string name, Diffculty diff) {

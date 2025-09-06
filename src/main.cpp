@@ -17,15 +17,15 @@ int main() {
   while (input != 0 && input != 1) {
     std::cout << "Select diffculty: " << std::endl
               << "0: Normal,\n"
-              << "1: Diffcult\n";
+              << "1: Difficult\n";
     std::cin >> input;
 
     if (input == 0) {
-      GameDiff = Diffculty::NORMAL;
+      GameDiff = Diffculty::normal;
       CLEAR_BUFFER;
       break;
     } else if (input == 1) {
-      GameDiff = Diffculty::DIFFICULT;
+      GameDiff = Diffculty::difficult;
       CLEAR_BUFFER;
       break;
     } else {

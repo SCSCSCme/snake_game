@@ -5,8 +5,8 @@
 #include <string>
 
 enum class Diffculty { 
-	NORMAL = 0,
-	DIFFICULT = 1 
+	normal = 0,
+	difficult = 1 
 };
 
 class Game {
