@@ -5,12 +5,14 @@
 #include <string>
 #include <vector>
 
+#include "object.h"
+
 struct Choice {
   std::string name;
   std::function<void()> func;
 };
 
-class Menu {
+class Menu : public Object {
 public:
   Menu(std::string name);
   void add_choice(Choice &c);

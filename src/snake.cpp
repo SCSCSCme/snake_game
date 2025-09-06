@@ -11,6 +11,4 @@ void Snake::move() {
   }
 }
 
-void Snake::input() {}
-
 void Snake::update() { move(); }
