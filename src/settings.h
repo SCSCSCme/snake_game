@@ -1,0 +1,1 @@
+#define EXIT_SO_RUNNING_ERROR 1
