@@ -1,5 +1,6 @@
 #include "game.h"
 #include "settings.h"
+#include "snake.h"
 
 #include <iostream>
 #include <string>
@@ -13,9 +14,4 @@ void Game::run() {
   }
 
   std::cout << "name: " << PlayerName << "\ndiffculty: " << diff;
-}
-
-Game::Game(std::string name, Difficulty diff) {
-  PlayerName = name;
-  difficulty = diff;
 }

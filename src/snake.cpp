@@ -1,11 +1,13 @@
 #include "snake.h"
+#include <string>
+#include <vector>
 
 void Snake::move() {
-  for (unsigned int i = 1; i < SnakeBody.size(); i++) {
+  for (unsigned int i = 1; i < SnakePos.size(); i++) {
     if (i == 1) {
       continue;
     }
-    SnakeBody[i] = SnakeBody[i - 1];
+    SnakePos[i] = SnakePos[i - 1];
   }
 }
 
