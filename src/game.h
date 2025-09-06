@@ -4,10 +4,7 @@
 #include <cstdint>
 #include <string>
 
-enum class Diffculty { 
-	normal = 0,
-	difficult = 1 
-};
+enum class Difficulty { normal = 0, difficult = 1 };
 
 class Game {
 private:
@@ -15,10 +12,10 @@ private:
   bool GamePause = false;
 
   std::string PlayerName;
-  Diffculty difficulty;
+  Difficulty difficulty;
 
 public:
-  Game(std::string name, Diffculty diff);
+  Game(std::string name, Difficulty diff);
 
   ~Game();
 

@@ -6,7 +6,7 @@
 
 void Game::run() {
   std::string diff;
-  if (difficulty == Diffculty::normal) {
+  if (difficulty == Difficulty::normal) {
     diff = "normal";
   } else {
     diff = "difficult";
@@ -15,7 +15,7 @@ void Game::run() {
   std::cout << "name: " << PlayerName << "\ndiffculty: " << diff;
 }
 
-Game::Game(std::string name, Diffculty diff) {
+Game::Game(std::string name, Difficulty diff) {
   PlayerName = name;
   difficulty = diff;
 }

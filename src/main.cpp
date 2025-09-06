@@ -7,7 +7,7 @@
 #define CLEAR_BUFFER                                                           \
   std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
 
-Diffculty GameDiff;
+Difficulty GameDiff;
 
 int main() {
   int input = -1;
@@ -21,11 +21,11 @@ int main() {
     std::cin >> input;
 
     if (input == 0) {
-      GameDiff = Diffculty::normal;
+      GameDiff = Difficulty::normal;
       CLEAR_BUFFER;
       break;
     } else if (input == 1) {
-      GameDiff = Diffculty::difficult;
+      GameDiff = Difficulty::difficult;
       CLEAR_BUFFER;
       break;
     } else {

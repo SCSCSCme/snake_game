@@ -4,12 +4,7 @@
 #include <utility>
 #include <vector>
 
-enum class Direction {
-	up=0,
-	down=1,
-	right=2,
-	left=3
-};
+enum class Direction { up = 0, down = 1, right = 2, left = 3 };
 
 class Snake {
 private:
