@@ -15,3 +15,5 @@ void Game::run() {
 
   std::cout << "name: " << PlayerName << "\ndiffculty: " << diff;
 }
+
+Game::~Game() { std::cout << "Game exit;\n"; }
