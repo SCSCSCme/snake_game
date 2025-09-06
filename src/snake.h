@@ -13,6 +13,7 @@ private:
 
 public:
   void move();
+  void input();
   void update();
 };
 

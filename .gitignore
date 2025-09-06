@@ -1,0 +1,4 @@
+.cache/
+snake_game
+src/*.o
+*.o
