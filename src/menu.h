@@ -15,7 +15,7 @@ struct Choice {
 
 class Menu : public Object {
 public:
-  Menu(std::string name, display::Renderer renderer);
+  Menu(std::string name, display::Renderer* renderer);
   void add_choice(Choice &c);
 
 private:
