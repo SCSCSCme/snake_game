@@ -6,10 +6,12 @@
 
 class Object {
 public:
-  void draw(display::Renderer display);
+  Object(display::Renderer *renderer) { this->renderer = renderer; }
+  void draw();
 
 protected:
-  std::vector<display::RenderObject> output;
+  std::vector<display::RenderObject> outputs;
+  display::Renderer *renderer;
 };
 
 #endif

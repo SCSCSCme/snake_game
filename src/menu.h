@@ -5,6 +5,7 @@
 #include <string>
 #include <vector>
 
+#include "display.h"
 #include "object.h"
 
 struct Choice {
@@ -14,7 +15,7 @@ struct Choice {
 
 class Menu : public Object {
 public:
-  Menu(std::string name);
+  Menu(std::string name, display::Renderer renderer);
   void add_choice(Choice &c);
 
 private:
